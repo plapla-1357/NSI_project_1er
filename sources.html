@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proget NSI 2022</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/animation.css">
+    <link rel="stylesheet" href="./src/css/sources.css">
+    <link rel="stylesheet" href="./src/css/aceuil.css">
+    <link rel="stylesheet" href="./src/css/presentation.css">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- node modules import -->
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="./src/js/transition.js"></script>
+
+    <!-- js -->
+    <script defer src="./src/js/script.js"></script>
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2><a href="/">Projet NSI 2022</a></h2>
+    </header>
+    <section id="center">
+        <div id="menu_button" class="open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <section id="menu">
+            
+            <h3>Menu</h3>
+            <nav>
+                
+                <ul>
+                    <li class="selected">
+                        <a href="/index.html">Accueil</a>
+                        <span class="selector"></span>
+                    </li>
+                    <li>
+                        <a href="/presentation.html">Présentation</a>
+                        <span class="selector"></span>
+                    </li>
+                    <li>
+                        <a href="/hist_info.html">Histoire de l'informatique</a>
+                        <span class="selector"></span>
+                    </li>
+                    <li>
+                        <a href="/sources.html">Sources</a>
+                        <span class="selector"></span>
+                    </li>
+
+                </ul>
+            </nav>
+        </section>
+        <section id="right_side">
+            <main id="swup" class="transition-page sources">
+                <h1>Sources</h1>
+                <h2>sources de programations:</h2>
+                <ul id="dev_src" class="src">
+                    <li>
+                        <a href="https://developer.mozilla.org/fr/">
+                            <div class="card">
+                                <img src="./src/image/MDN_Web_Docs_logo.svg.png" alt="MDN Web Logo" />
+                                <p>la MDN documentations de Modzila firefox</p>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://stackoverflow.com">
+                            <div class="card">
+                                <img src="./src/image/stack_overflow.png" alt="stackoverflow logo">
+                                <p>stackoverflow (l'ange gardient de dev)</p>
+                            </div>
+                            
+                        </a>    
+                    </li>
+                    
+                    <li>
+                        <a href="https://colorhunt.co/palette/3a3845f7ccacc69b7b826f66">
+                            <div class="card">
+                                <img src="./src/image/color_hunt.png" alt="MDN Web Logo" />
+                                <p>Color Hunt (pour la pallette de couleur)</p>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <h2 class="different">sources l'histoire de l'informatique:</h2>
+                <ul id="dev_hist_info" class="src">
+                    <li>
+                        <a href="https://www.math93.com/lycee/975-nsi-numerique-et-sciences-informatiques-une-histoire-de-l-informatique.html">
+                            <div class="card">
+                                <img src="./src/image/math93.png" alt="stackoverflow logo">
+                                <p>math93 l'histoire de l'informatique</p>
+                            </div>
+                            
+                        </a>    
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <p>Gaëtan Roux <a href="https://www.college-lycee-idf91.fr/">College Lycée Ile de France <img src="./src/image/logo_idf.png" alt="logo du collège ile de France"></a></p>
+            </footer>
+        </section>
+    </section>
+    
+</body>
+
+</html>

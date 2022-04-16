@@ -1,0 +1,21 @@
+
+.aceuil{
+    p{
+        margin-left: 2rem;
+        color: black
+    }
+    li{
+        margin-left: 4rem;
+        color: black;
+        list-style: "-   ";
+        &.checked{
+            list-style: "✔";
+            color: #2bcf2b;
+            p{
+                margin-left: 1rem;
+            }
+        }
+        
+
+    }
+}

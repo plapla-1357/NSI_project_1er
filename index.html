@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Proget NSI 2022</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="./src/css/main.css">
+    <link rel="stylesheet" href="./src/css/animation.css">
+    <link rel="stylesheet" href="./src/css/sources.css">
+    <link rel="stylesheet" href="./src/css/aceuil.css">
+    <link rel="stylesheet" href="./src/css/presentation.css">
+
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
+    <!-- node modules import -->
+    <script defer src="./node_modules/swup/dist/swup.min.js"></script>
+    <script defer src="./src/js/transition.js"></script>
+
+    <!-- js -->
+    <script defer src="./src/js/script.js"></script>
+
+    <!-- fontawsome -->
+    <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+
+<body>
+    <header>
+        <h2><a href="/">Projet NSI 2022</a></h2>
+    </header>
+    <section id="center">
+        <div id="menu_button" class="open">
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <section id="menu">
+            <h3>Menu</h3>
+            <nav>
+                
+                <ul>
+                    <li class="selected">
+                        <a href="/index.html">Accueil</a>
+                        <span class="selector"></span>
+                    </li>
+                    <li>
+                        <a href="/presentation.html">Présentation</a>
+                        <span class="selector"></span>
+                    </li>
+                    <li>
+                        <a href="/hist_info.html">Histoire de l'informatique</a>
+                        <span class="selector"></span>
+                    </li>
+                    <li>
+                        <a href="/sources.html">Sources</a>
+                        <span class="selector"></span>
+                    </li>
+                    <button id="esteregg" onclick="easter()">click</button>
+
+                </ul>
+            </nav>
+        </section>
+        <section id="right_side">
+            <main id="swup" class="transition-page aceuil">
+                <h1>Accueil</h1>
+                <h2>Bienvenue sur mon Projet de NSI</h2>
+                <p>Le Projet etait de faire une site web avec:</p>
+                <ul>
+                    <li class = "checked">
+                        <p>un header avec marquer: "Projet NSI 2022"</p>
+                    </li >
+                    <li class = "checked">
+                        <p>une nav avec les onglet: </p>
+                        <ul>
+                            <li>Accueil</li>
+                            <li>Présentation</li>
+                            <li>Histoire de l'informatique</li>
+                            <li>Sources</li>
+                        </ul>
+                    </li>
+                </ul>
+            </main>
+            <footer>
+                <p>Gaëtan Roux <a href="https://www.college-lycee-idf91.fr/">College Lycée Ile de France <img src="./src/image/logo_idf.png" alt="logo du collège ile de France"></a></p>
+            </footer>
+        </section>
+    </section>
+    
+</body>
+
+</html>

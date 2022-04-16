@@ -1,0 +1,45 @@
+$main_color: #3A3845;
+$light: #F7CCAC;
+$brown: #C69B7B;
+$grey: #826F66;
+
+body{
+    font-size: 20px;
+}
+
+.src{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .card{
+        padding: 0.5em;
+        margin: 1rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        background-color: $light;
+        border-radius: 10px;
+        height: 10rem;
+        width: 8rem;
+        img{
+            margin: auto;
+            max-height: 6rem;
+            max-width: 5rem;
+        }
+
+        transition: box-shadow 0.4s, background-color 0.4s, color 0.4s;
+        &:hover{
+            box-shadow: 5px 5px 10px $main_color;
+            background-color: $main_color;
+            color: $light;
+        }
+        p{
+            margin-left: 0 !important;  //todo changer ca !!!inportant
+        }
+    }
+}

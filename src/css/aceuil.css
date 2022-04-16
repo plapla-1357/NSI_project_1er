@@ -1,0 +1,17 @@
+@charset "UTF-8";
+.aceuil p {
+  margin-left: 2rem;
+  color: black;
+}
+.aceuil li {
+  margin-left: 4rem;
+  color: black;
+  list-style: "-   ";
+}
+.aceuil li.checked {
+  list-style: "✔";
+  color: #2bcf2b;
+}
+.aceuil li.checked p {
+  margin-left: 1rem;
+}/*# sourceMappingURL=aceuil.css.map */

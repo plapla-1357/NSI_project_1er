@@ -1,0 +1,9 @@
+.transition-page {
+  opacity: 1;
+  transition: 300ms;
+}
+
+html.is-animating .transition-page {
+  opacity: 0;
+  transform: translateY(100px);
+}/*# sourceMappingURL=animation.css.map */
