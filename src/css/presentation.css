@@ -1,9 +1,12 @@
 .presentation ul {
   margin-left: 6rem;
 }
+
 .presentation li {
   list-style: " - ";
 }
+
 .presentation p {
   margin: 10px 0;
-}/*# sourceMappingURL=presentation.css.map */
+}
+/*# sourceMappingURL=presentation.css.map */

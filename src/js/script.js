@@ -40,9 +40,9 @@ menu_button.addEventListener("click", () => {
 
 function easter(){
     console.log("click")
-    alert("you found the easter egg!! 😊")
+    alert("vous avez trouvez l'easter egg!! (je veux 20/20 😊 svp...)")
 }
-
+ 
 
 
 

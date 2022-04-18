@@ -1,9 +1,12 @@
 .transition-page {
   opacity: 1;
+  -webkit-transition: 300ms;
   transition: 300ms;
 }
 
 html.is-animating .transition-page {
   opacity: 0;
-  transform: translateY(100px);
-}/*# sourceMappingURL=animation.css.map */
+  -webkit-transform: translateY(100px);
+          transform: translateY(100px);
+}
+/*# sourceMappingURL=animation.css.map */

@@ -1,7 +1,7 @@
 * {
   margin: 0;
   padding: 0px;
-  font-family: "roboto";
+  font-family: 'roboto';
 }
 
 html {
@@ -9,7 +9,7 @@ html {
 }
 
 ::-webkit-scrollbar {
-  background: rgba(0, 0, 0, 0);
+  background: #00000000;
   width: 10px;
 }
 
@@ -22,19 +22,25 @@ html {
 body {
   overflow-y: hidden;
 }
+
 body header {
   font-size: 1.5rem;
   background-color: #3A3845;
   padding: 1em;
 }
+
 body header a {
   text-decoration: none;
   color: #F7CCAC;
 }
+
 body #center {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   position: relative;
 }
+
 body #center #menu_button {
   position: absolute;
   top: 10px;
@@ -44,8 +50,10 @@ body #center #menu_button {
   width: 50px;
   border-radius: 0 10px 10px 0;
   z-index: 4;
+  -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
+
 body #center #menu_button span {
   position: absolute;
   left: 5px;
@@ -53,66 +61,97 @@ body #center #menu_button span {
   width: 40px;
   background-color: #826F66;
   border-radius: 5px;
+  -webkit-transition: background-color 0.4s, opacity 0.4s, -webkit-transform 0.4s;
+  transition: background-color 0.4s, opacity 0.4s, -webkit-transform 0.4s;
   transition: transform 0.4s, background-color 0.4s, opacity 0.4s;
+  transition: transform 0.4s, background-color 0.4s, opacity 0.4s, -webkit-transform 0.4s;
 }
+
 body #center #menu_button span:nth-child(1) {
   top: 23px;
 }
+
 body #center #menu_button span:nth-child(2) {
   top: 10px;
 }
+
 body #center #menu_button span:nth-child(3) {
   top: 36px;
 }
+
 body #center #menu_button.open span:nth-child(1) {
   top: 23px;
   opacity: 0;
 }
+
 body #center #menu_button.open span:nth-child(2) {
   top: 10px;
-  transform: translateY(13px) rotate(45deg);
+  -webkit-transform: translateY(13px) rotate(45deg);
+          transform: translateY(13px) rotate(45deg);
 }
+
 body #center #menu_button.open span:nth-child(3) {
   top: 36px;
-  transform: translateY(-13px) rotate(-45deg);
+  -webkit-transform: translateY(-13px) rotate(-45deg);
+          transform: translateY(-13px) rotate(-45deg);
 }
+
 body #center #menu_button:hover {
   background-color: #826F66;
 }
+
 body #center #menu_button:hover span {
   background-color: #F7CCAC;
 }
+
 body #center #menu {
   position: relative;
   height: calc(100vh - 5.7rem);
   background-color: #C69B7B;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: 250px;
   padding: 0;
   overflow-y: scroll;
+  -webkit-transition: width 0.4s ease;
   transition: width 0.4s ease;
 }
+
 body #center #menu.open {
   width: 0;
 }
+
 body #center #menu h3 {
   text-align: center;
   font-size: 25px;
   padding: 1em;
 }
+
 body #center #menu nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
+
 body #center #menu nav li {
   position: relative;
   width: 200px;
   font-size: 16px;
   margin: 2em 0;
   height: 3em;
+  -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
 }
+
 body #center #menu nav li .selector {
   width: 5px;
   height: 3em;
@@ -122,65 +161,96 @@ body #center #menu nav li .selector {
   z-index: 2;
   border-radius: 0 10px 10px 0px;
   background-color: #826F66;
+  -webkit-transition: width 0.4s ease, background-color 0.4s ease;
   transition: width 0.4s ease, background-color 0.4s ease;
 }
+
 body #center #menu nav li a {
   width: 200px;
   position: absolute;
   text-decoration: none;
   color: black;
+  -webkit-transition: color 0.4s;
   transition: color 0.4s;
   z-index: 3;
   padding: 1em;
 }
+
 body #center #menu nav li:hover {
   color: #F7CCAC;
 }
+
 body #center #menu nav li:hover a {
   color: #F7CCAC;
 }
+
 body #center #menu nav li:hover .selector {
   width: 200px;
 }
+
 body #center #menu nav li.selected {
   color: #F7CCAC;
 }
+
 body #center #menu nav li.selected a {
   color: #F7CCAC;
 }
+
 body #center #menu nav li.selected .selector {
   background-color: #3A3845;
   width: 200px;
 }
+
 body #center #right_side {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
+
 body #center #right_side main {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   width: calc(100vw - 250px);
   height: calc(100vh - 7.8rem);
   overflow-y: scroll;
   overflow-x: auto;
 }
+
 body #center #right_side main.closed {
   width: 100vw;
 }
+
 body #center #right_side main h1 {
   margin-top: 0.5em;
   font-size: 3rem;
   color: #826F66;
-  align-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
+
 body #center #right_side main h2 {
   position: relative;
   font-size: 2rem;
   margin: 1rem;
   width: 90%;
 }
+
 body #center #right_side main h2::after {
   content: "";
   position: absolute;
@@ -190,13 +260,16 @@ body #center #right_side main h2::after {
   width: 100%;
   background-color: #826F66;
 }
+
 body #center #right_side main h3 {
   margin: 1rem;
   margin-left: 3rem;
 }
+
 body #center #right_side main p {
   margin-left: 4rem;
 }
+
 body #center #right_side footer {
   position: relative;
   z-index: 2;
@@ -204,25 +277,43 @@ body #center #right_side footer {
   padding: 0.5em;
   color: #F7CCAC;
   background-color: #3A3845;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
+
 body #center #right_side footer p {
   margin: auto 0;
 }
+
 body #center #right_side footer a {
   color: #C69B7B;
   text-decoration: none;
+  -webkit-transition: background-color 0.4s;
   transition: background-color 0.4s;
   border-radius: 5px;
   padding: 0.2em;
 }
+
 body #center #right_side footer a:hover {
   background-color: #524f61;
 }
+
 body #center #right_side footer img {
   height: 1em;
 }
+
 body #center #right_side footer li {
   list-style-position: inside;
-}/*# sourceMappingURL=main.css.map */
+}
+
+#esteregg {
+  height: 30px;
+  width: 100%;
+  background: #00000000;
+  border: none;
+}
+/*# sourceMappingURL=main.css.map */
