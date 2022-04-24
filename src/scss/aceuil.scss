@@ -1,19 +1,13 @@
 
 .aceuil{
-    p{
-        margin-left: 2rem;
-        color: black
-    }
     li{
-        margin-left: 4rem;
+        padding: 10px;
+        margin-left: 5rem;
         color: black;
-        list-style: "-   ";
+        list-style: "-";
         &.checked{
             list-style: "✔";
-            color: #2bcf2b;
-            p{
-                margin-left: 1rem;
-            }
+            // color: #2bcf2b;
         }
         
 

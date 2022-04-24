@@ -118,11 +118,11 @@ body #center #menu {
   width: 250px;
   padding: 0;
   overflow-y: scroll;
-  -webkit-transition: width 0.4s ease;
-  transition: width 0.4s ease;
+  -webkit-transition: width 0.4s;
+  transition: width 0.4s;
 }
 
-body #center #menu.open {
+body #center #menu.closed {
   width: 0;
 }
 
@@ -315,5 +315,24 @@ body #center #right_side footer li {
   width: 100%;
   background: #00000000;
   border: none;
+}
+
+@media screen and (max-width: 768px) {
+  html {
+    font-size: 15px;
+  }
+  body #center #menu {
+    position: absolute;
+    z-index: 2;
+  }
+  body #center #right_side main {
+    width: 100vw;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  html {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

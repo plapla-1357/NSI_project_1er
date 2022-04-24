@@ -104,8 +104,8 @@ body{
             width: 250px;
             padding:0;
             overflow-y: scroll;
-            transition: width 0.4s ease;
-            &.open{
+            transition: width 0.4s;
+            &.closed{
                 width:0;
             }
             h3{
@@ -259,3 +259,26 @@ body{
     border: none;
 }
 
+
+// responsive
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 15px;
+    }
+    body #center {
+
+        #menu{
+            position: absolute;
+            z-index: 2;
+        }
+        #right_side main{
+            width: 100vw;
+        }
+    }
+}
+@media screen and (max-width: 300px) {
+    html{
+        font-size: 10px;
+    }
+}

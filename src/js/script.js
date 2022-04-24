@@ -33,15 +33,33 @@ const menu = document.getElementById("menu")
 menu_button.addEventListener("click", () => {
     let main = document.getElementById("swup")
     menu_button.classList.toggle("open")
-    menu.classList.toggle("open")
+    menu.classList.toggle("closed")
     main.classList.toggle("closed")
 
 })
 
 function easter(){
     console.log("click")
-    alert("vous avez trouvez l'easter egg!! (je veux 20/20 😊 svp...)")
+    alert("vous avez trouvez l'easter egg!! (est ce que je peux avoir 20/20 😊 svp...)")
 }
+
+
+function closeNavBar(media){
+    if (media.matches){
+        let main = document.getElementById("swup")
+        menu_button.classList.remove("open")
+        menu.classList.add("closed")
+        main.classList.add("closed")
+    }else{
+        let main = document.getElementById("swup")
+        menu_button.classList.add("open")
+        menu.classList.remove("closed")
+        main.classList.remove("closed")
+    }
+}
+let media = window.matchMedia("(max-width: 768px)");
+closeNavBar(media);
+media.addListener(closeNavBar)
  
 
 
