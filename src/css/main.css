@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0px;
@@ -292,6 +293,22 @@ body #center #right_side main br {
   content: "";
   display: block;
   margin-top: 1rem;
+}
+
+body #center #right_side main li {
+  margin-left: 5rem;
+  color: black;
+  list-style: "-  ";
+}
+
+body #center #right_side main li.checked {
+  margin-bottom: 10px;
+  list-style: "✔";
+}
+
+body #center #right_side main li.checked::marker {
+  color: #2bcf2b;
+  padding-right: 10px;
 }
 
 body #center #right_side footer {

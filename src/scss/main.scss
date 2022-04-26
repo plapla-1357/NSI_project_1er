@@ -229,6 +229,22 @@ body{
                     margin-top: 1rem;
                     
                 }
+                li{
+                    margin-left: 5rem;
+                    color: black;
+                    list-style: "-  ";
+                    &.checked{
+                        margin-bottom: 10px;
+                        list-style: "✔";
+                        &::marker{
+                            color: #2bcf2b;
+                            padding-right: 10px;
+                        }
+                    }
+                    
+                    
+            
+                }
 
             }
             footer{
@@ -260,6 +276,7 @@ body{
                 li{
                     list-style-position: inside;
                 }
+                
             }
         }
     }   
