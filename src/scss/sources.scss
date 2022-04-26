@@ -14,13 +14,15 @@ body{
     a{
         text-decoration: none;
         color: black;
+        height: 100%;
+        width: 100%;
     }
     .card{
         padding: 0.5em;
         margin: 1rem;
         display: flex;
         flex-direction: column;
-        justify-content: center;
+        justify-content: space-around;
         text-align: center;
         background-color: $light;
         border-radius: 10px;
@@ -36,10 +38,12 @@ body{
         &:hover{
             box-shadow: 5px 5px 10px $main_color;
             background-color: $main_color;
-            color: $light;
+            figcaption{
+                color: $light;
+            }
         }
-        p{
-            margin-left: 0 !important;  //todo changer ca !!!inportant
+        figcaption{
+            margin-left: 0;  
         }
     }
 }

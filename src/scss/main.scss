@@ -24,6 +24,11 @@ html{
     border-radius: 5px;
 }
 
+::selection{
+    background-color: $main_color;
+    color: $light;
+}
+
 
 body{
     overflow-y: hidden;
@@ -74,7 +79,7 @@ body{
                     } 
                 }
                 &.open{
-
+                    background-color: #00000000;
                         span:nth-child(1){
                             top: 23px;
                             opacity: 0;
@@ -105,6 +110,7 @@ body{
             padding:0;
             overflow-y: scroll;
             transition: width 0.4s;
+            user-select: none;
             &.closed{
                 width:0;
             }
@@ -215,7 +221,13 @@ body{
                     margin-left:3rem;
                 }
                 p{
-                    margin-left: 4rem;
+                    margin:0 4rem ;
+                }
+                br{
+                    content: "";
+                    display: block;
+                    margin-top: 1rem;
+                    
                 }
 
             }

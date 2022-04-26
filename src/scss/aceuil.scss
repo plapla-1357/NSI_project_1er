@@ -1,14 +1,18 @@
 
 .aceuil{
     li{
-        padding: 10px;
         margin-left: 5rem;
         color: black;
         list-style: "-";
         &.checked{
+            margin-bottom: 10px;
             list-style: "✔";
-            // color: #2bcf2b;
+            &::marker{
+                color: #2bcf2b;
+                padding-right: 10px;
+            }
         }
+        
         
 
     }

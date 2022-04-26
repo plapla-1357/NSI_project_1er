@@ -19,6 +19,16 @@ html {
   border-radius: 5px;
 }
 
+::-moz-selection {
+  background-color: #3A3845;
+  color: #F7CCAC;
+}
+
+::selection {
+  background-color: #3A3845;
+  color: #F7CCAC;
+}
+
 body {
   overflow-y: hidden;
 }
@@ -79,6 +89,10 @@ body #center #menu_button span:nth-child(3) {
   top: 36px;
 }
 
+body #center #menu_button.open {
+  background-color: #00000000;
+}
+
 body #center #menu_button.open span:nth-child(1) {
   top: 23px;
   opacity: 0;
@@ -120,6 +134,10 @@ body #center #menu {
   overflow-y: scroll;
   -webkit-transition: width 0.4s;
   transition: width 0.4s;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 body #center #menu.closed {
@@ -267,7 +285,13 @@ body #center #right_side main h3 {
 }
 
 body #center #right_side main p {
-  margin-left: 4rem;
+  margin: 0 4rem;
+}
+
+body #center #right_side main br {
+  content: "";
+  display: block;
+  margin-top: 1rem;
 }
 
 body #center #right_side footer {
