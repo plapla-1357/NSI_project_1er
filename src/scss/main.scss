@@ -181,7 +181,7 @@ body{
             flex-direction: column;
             justify-content: space-between;
             main{
-                
+                padding-bottom: 30px;
                 display: flex;
                 align-items: flex-start;
                 flex-direction: column;
@@ -189,7 +189,7 @@ body{
                 &.closed{
                     width: 100vw;
                 }
-                height: calc(100vh - 7.8rem);
+                height: calc(100vh - 7.8rem - 30px);
                 
                 overflow-y: scroll;
                 overflow-x: auto;
@@ -220,7 +220,10 @@ body{
                     margin: 1rem;
                     margin-left:3rem;
                 }
-                p{
+                .no_margin{
+                    margin: 0;
+                }
+                p, ul{
                     margin:0 4rem ;
                 }
                 br{
@@ -230,7 +233,7 @@ body{
                     
                 }
                 li{
-                    margin-left: 5rem;
+                    margin-left: 4rem;
                     color: black;
                     list-style: "-  ";
                     &.checked{
@@ -251,7 +254,7 @@ body{
                 position: relative;
                 z-index: 2;
                 font-size:0.9rem;
-                padding: 0.5em;
+                padding: 0.6em;
                 color: $light;
                 background-color: $main_color;
                 display:flex;

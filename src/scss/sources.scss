@@ -11,6 +11,9 @@ body{
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
+    li{
+        margin: 0 !important;
+    }
     a{
         text-decoration: none;
         color: black;

@@ -234,6 +234,7 @@ body #center #right_side {
 }
 
 body #center #right_side main {
+  padding-bottom: 30px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -245,7 +246,7 @@ body #center #right_side main {
       -ms-flex-direction: column;
           flex-direction: column;
   width: calc(100vw - 250px);
-  height: calc(100vh - 7.8rem);
+  height: calc(100vh - 7.8rem - 30px);
   overflow-y: scroll;
   overflow-x: auto;
 }
@@ -285,7 +286,11 @@ body #center #right_side main h3 {
   margin-left: 3rem;
 }
 
-body #center #right_side main p {
+body #center #right_side main .no_margin {
+  margin: 0;
+}
+
+body #center #right_side main p, body #center #right_side main ul {
   margin: 0 4rem;
 }
 
@@ -296,7 +301,7 @@ body #center #right_side main br {
 }
 
 body #center #right_side main li {
-  margin-left: 5rem;
+  margin-left: 4rem;
   color: black;
   list-style: "-  ";
 }
@@ -315,7 +320,7 @@ body #center #right_side footer {
   position: relative;
   z-index: 2;
   font-size: 0.9rem;
-  padding: 0.5em;
+  padding: 0.6em;
   color: #F7CCAC;
   background-color: #3A3845;
   display: -webkit-box;
