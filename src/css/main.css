@@ -262,6 +262,7 @@ body #center #right_side main h1 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
+  text-align: center;
 }
 
 body #center #right_side main h2 {
@@ -314,6 +315,21 @@ body #center #right_side main li.checked {
 body #center #right_side main li.checked::marker {
   color: #2bcf2b;
   padding-right: 10px;
+}
+
+body #center #right_side main .image {
+  width: 100%;
+}
+
+body #center #right_side main .img_comp {
+  height: 150px;
+  padding: 0 1em;
+}
+
+body #center #right_side main .article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 body #center #right_side footer {

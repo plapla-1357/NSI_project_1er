@@ -27,6 +27,7 @@ html{
 ::selection{
     background-color: $main_color;
     color: $light;
+
 }
 
 
@@ -198,6 +199,7 @@ body{
                     font-size: 3rem;
                     color:$grey;
                     align-self: center;
+                    text-align: center;
                     
                 }                 
                 h2{
@@ -229,8 +231,7 @@ body{
                 br{
                     content: "";
                     display: block;
-                    margin-top: 1rem;
-                    
+                    margin-top: 1rem; 
                 }
                 li{
                     margin-left: 4rem;
@@ -247,6 +248,16 @@ body{
                     
                     
             
+                }
+                .image{
+                    width: 100%;
+                }
+                .img_comp{
+                    height: 150px;
+                    padding:0 1em ; 
+                }
+                .article{
+                    display: flex;
                 }
 
             }

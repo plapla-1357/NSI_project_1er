@@ -5,5 +5,10 @@ aller sur <a href="https://frolicking-marzipan-c4ac51.netlify.app/">https://frol
 
 pour mon code allez sur <a href="https://github.com/plapla-1357/NSI_prodject_1er">https://github.com/plapla-1357/NSI_prodject_1er</a>
 
+<br>
+pour telecharger le code: 
+clickez sur le bouton code puis cliquez sur telecharger fichier zip
+<img src="./src/image/README_help.png">
+
 <img src="./src/image/logo_idf.png">
 
