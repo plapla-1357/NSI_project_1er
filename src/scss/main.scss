@@ -23,12 +23,15 @@ html{
     margin: 5px;
     border-radius: 5px;
 }
-
+::-webkit-scrollbar-corner{
+    background: #00000000;
+}
 ::selection{
     background-color: $main_color;
     color: $light;
 
 }
+
 
 
 body{
